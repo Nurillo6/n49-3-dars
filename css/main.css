@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --border-color:#E6F3FE;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: sans-serif;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer{
+    background-color: teal;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+footer{
+    margin-top: auto;
+}
+.customers-section{
+    padding: 62px 0;
+}
+.about__leo + .about__leo{
+    margin-left: 67px;
+}
+.customers__content {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.customers__title {
+    color: #000;
+    font-size: 48.44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+.customers__arrow-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.customers__arrow-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+
+    &:first-child{
+        transform: rotate(180deg);
+    }
+}
+.about__avatar{
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.about{
+    display: flex;
+    align-items: start;
+}
+
+.about__leo{
+    width: 420px;
+    padding: 30px 0;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+.about__blue-bg{
+    width: 62px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0082F4;
+}
+.about__avatar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 32px;
+    margin: auto 0;
+}
+.about__content{
+    width: 236px;
+    margin-left: 137px;
+}
+.about__text{
+    margin-bottom: 45px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.about__name{
+    padding-left: 35px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    &::before{
+        content: "";
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto 0;
+
+        background-color: #000;
+    }
+}
+.about__job{
+    padding-left: 35px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    opacity: 0.5;
+}
+
+.form{
+    margin-top: 50px;
+}
+.form__label{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    width: 487px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);  
+    &::before{
+        content: "";
+        width: 32px;
+        height: 25px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: 25px;
+        background-image: url("../images/email.svg");
+        background-repeat: no-repeat;
+        background-size: 32px 25px;
+
+    }  
+}
+.form__input{
+    padding: 8px 91px 8px 57px;
+    outline: none;
+    background: transparent;
+    border: none;
+
+    &::placeholder{
+        color: #636466;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+   
+}
+.form__btn{
+    width: 102px;
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 10px;
+    background: #0082F4; 
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.wrap{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
